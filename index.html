@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,10 +11,17 @@
 
 <body>
     <header>
-        <h1>Hunting Phone</h1>
+        <h1 class="text-6xl">Hunting Phone</h1>
     </header>
-    <main>
-
+    <main  class=" container mx-auto mt-10">
+        <section class="bg-gray-100 my-4 p-4 ">
+            <input id="search-field" type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />
+            <button onclick="handleSearch()" class="btn btn-accent">Search</button>
+        </section>
+        <section>
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2"> 
+            </div>
+        </section>
     </main>
 
     <script src="js/phone.js"></script>
